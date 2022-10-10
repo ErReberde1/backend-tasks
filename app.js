@@ -39,7 +39,7 @@ app.use(morgan("dev"))
 //routers
 
 app.use('/api/tasks',desencriptarToken, TasksRouter)
-app.use('/api/signin', regExpFunctionLogin,userSigInRouter)
+app.use('/api/signin',userSigInRouter)
 app.use('/api/signup',regExpFunction, userSigUpRouter)
 app.post('/api/token',desencriptarToken)
 app.use('/api/tasks/delete', desencriptarToken, deleteTasksRouter)

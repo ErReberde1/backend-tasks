@@ -10,13 +10,12 @@ signInCtrl.loginUser = async (req, res) => {
 
   try {
     /* Destructuring the user and password from the request body. */
-    const { email, password } = req.body;
+    const {email, password} = req.body;
 
     const foundUser = await pool.query("SELECT * FROM users WHERE email=?", [
-      email,
+      email
     ]);
 
-  
     /* Checking if the user and password exists in the database. */
     if (foundUser[0].length == 0)
       return res
