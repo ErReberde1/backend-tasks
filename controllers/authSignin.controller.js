@@ -7,7 +7,7 @@ import jwt from "jsonwebtoken";
 const signInCtrl = {};
 
 signInCtrl.loginUser = async (req, res) => {
-
+  
   try {
     /* Destructuring the user and password from the request body. */
     const {email, password} = req.body;

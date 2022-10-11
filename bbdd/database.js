@@ -15,7 +15,7 @@ export const pool = createPool({
 export const pool = createPool({
     host: "eu-cdbr-west-03.cleardb.net",
     user:"b9b059e13bd148",
-    password: "3fc0afee",
+    password: PASSDATABASEHEROKU,
     database: "heroku_96a9a3df21fb109",
     
 })
